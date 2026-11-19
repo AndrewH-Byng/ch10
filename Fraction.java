@@ -50,4 +50,11 @@ public class Fraction {
 			System.out.println("Error: denominator cannot be zero");
 		}
 }
+	public static Fraction mult (Fraction a, Fraction b){
+		int n = a.getNum() * b.getNum();
+		int d = a.getDenom() * b.getDenom();
+		Fraction answer = new Fraction (n,d);
+		return answer;
+	} 
+		
 }
